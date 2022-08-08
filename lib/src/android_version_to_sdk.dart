@@ -1,12 +1,12 @@
-abstract class AndroidVersionNames {
+abstract class AndroidVersionToSdk {
   /// October 2008: The original, first, version of Android.  Yay!
-  static const int base = 1;
+  static const int v1_0 = 1;
 
   /// February 2009: First Android update, officially called 1.1.
-  static const int base_1_1 = 2;
+  static const int v1_1 = 2;
 
   /// May 2009: Android 1.5.
-  static const int cupcake = 3;
+  static const int v1_5 = 3;
 
   /// September 2009: Android 1.6.
   ///
@@ -29,7 +29,7 @@ abstract class AndroidVersionNames {
   /// <li> {@link android.widget.TabHost} will use the new dark tab
   /// background design.
   /// </ul>
-  static const int donut = 4;
+  static const int v1_6 = 4;
 
   /// November 2009: Android 2.0
   ///
@@ -47,16 +47,16 @@ abstract class AndroidVersionNames {
   /// for tabs. In the new scheme, the foreground tab has a medium gray background
   /// the background tabs have a dark gray background.
   /// </ul>
-  static const int eclair = 5;
+  static const int v2_0 = 5;
 
   /// December 2009: Android 2.0.1
-  static const int eclair_0_1 = 6;
+  static const int v2_0_1 = 6;
 
   /// January 2010: Android 2.1
-  static const int eclairMR1 = 7;
+  static const int v2_1 = 7;
 
   /// June 2010: Android 2.2
-  static const int froyo = 8;
+  static const int v2_2 = 8;
 
   /// November 2010: Android 2.3
   ///
@@ -66,10 +66,10 @@ abstract class AndroidVersionNames {
   /// <li> The application's notification icons will be shown on the new
   /// dark status bar background, so must be visible in this situation.
   /// </ul>
-  static const int gingerbread = 9;
+  static const int v2_3 = 9;
 
   /// February 2011: Android 2.3.3.
-  static const int gingerbreadMR1 = 10;
+  static const int v2_3_3 = 10;
 
   /// February 2011: Android 3.0.
   ///
@@ -107,10 +107,10 @@ abstract class AndroidVersionNames {
   /// <li> {@link android.widget.Scroller} will be constructed with
   /// "flywheel" behavior enabled by default.
   /// </ul>
-  static const int honeycomb = 11;
+  static const int v3_0 = 11;
 
   /// May 2011: Android 3.1.
-  static const int honeycombMR1 = 12;
+  static const int v3_1 = 12;
 
   /// June 2011: Android 3.2.
   ///
@@ -156,7 +156,7 @@ abstract class AndroidVersionNames {
   /// some developers have done absolute comparisons against this value
   /// instead of correctly masking the bits they are interested in.
   /// </ul>
-  static const int honeycombMR2 = 13;
+  static const int v3_2 = 13;
 
   /// October 2011: Android 4.0.
   ///
@@ -200,10 +200,10 @@ abstract class AndroidVersionNames {
   /// <li> {@link android.app.ActionBar#setHomeButtonEnabled
   /// ActionBar.setHomeButtonEnabled()} is false by default.
   /// </ul>
-  static const int iceCreamSandwich = 14;
+  static const int v4_0 = 14;
 
   /// December 2011: Android 4.0.3.
-  static const int iceCreamSandwichMR1 = 15;
+  static const int v4_0_3 = 15;
 
   /// June 2012: Android 4.1.
   ///
@@ -244,7 +244,7 @@ abstract class AndroidVersionNames {
   /// AccessibilityServiceInfo.FLAG_INCLUDE_NOT_IMPORTANT_VIEWS} must be set
   /// for unimportant views to be included in queries.
   /// </ul>
-  static const int jellyBean = 16;
+  static const int v4_1 = 16;
 
   /// November 2012: Android 4.2, Moar jelly beans!
   ///
@@ -262,10 +262,10 @@ abstract class AndroidVersionNames {
   /// WebView.addJavascriptInterface} requires explicit annotations on methods
   /// for them to be accessible from Javascript.
   /// </ul>
-  static const int jellyBeanMR1 = 17;
+  static const int v4_2 = 17;
 
   /// July 2013: Android 4.3, the revenge of the beans.
-  static const int jellyBeanMR2 = 18;
+  static const int v4_3 = 18;
 
   /// October 2013: Android 4.4, KitKat, another tasty treat.
   ///
@@ -296,7 +296,7 @@ abstract class AndroidVersionNames {
   /// {@link android.Manifest.permission#WRITE_EXTERNAL_STORAGE}
   /// permissions.</li>
   /// </ul>
-  static const int kitkat = 19;
+  static const int v4_4 = 19;
 
   /// June 2014: Android 4.4W. KitKat for watches, snacks on the run.
   ///
@@ -306,7 +306,7 @@ abstract class AndroidVersionNames {
   /// <li>{@link android.app.AlertDialog} might not have a default background if the theme does
   /// not specify one.</li>
   /// </ul>
-  static const int kitkatWatch = 20;
+  static const int v4_4W = 20;
 
   /// November 2014: Lollipop.  A flat one with beautiful shadows.  But still tasty.
   ///
@@ -336,12 +336,12 @@ abstract class AndroidVersionNames {
   /// <li> A {@link android.service.dreams.DreamService} must require the
   /// {@link android.Manifest.permission#BIND_DREAM_SERVICE} permission to be usable.</li>
   /// </ul>
-  static const int lollipop = 21;
+  static const int v5_0 = 21;
 
   /// March 2015: Lollipop with an extra sugar coating on the outside!
   /// For more information about this release, see the
   /// <a href="/about/versions/android-5.1">Android 5.1 APIs</a>.
-  static const int lollipopMR1 = 22;
+  static const int v5_1 = 22;
 
   /// M is for Marshmallow!
   ///
@@ -371,7 +371,7 @@ abstract class AndroidVersionNames {
   /// <li> {@link android.widget.ScrollView} now respects the layout param margins
   /// when measuring.</li>
   /// </ul>
-  static const int m = 23;
+  static const int v6_0 = 23;
 
   /// N is for Nougat.
   ///
@@ -423,12 +423,12 @@ abstract class AndroidVersionNames {
   /// descendant view, even if the descendant view returns <code>false</code> from its handler
   /// for these events.</li>
   /// </ul>
-  static const int n = 24;
+  static const int v7_0 = 24;
 
   /// N MR1: Nougat++. For more information about this release, see
   /// <a href="/about/versions/nougat/android-7.1">Android 7.1 for
   /// Developers</a>.
-  static const int nMR1 = 25;
+  static const int v7_1 = 25;
 
   /// O.
   ///
@@ -516,7 +516,7 @@ abstract class AndroidVersionNames {
   /// which don't provide a focus-state drawable themselves. This can be disabled by setting
   /// {@link android.R.attr#defaultFocusHighlightEnabled} to false.</li>
   /// </ul>
-  static const int o = 26;
+  static const int v8_0 = 26;
 
   /// O MR1.
   ///
@@ -531,7 +531,7 @@ abstract class AndroidVersionNames {
   /// orientation if the associated activity is not fullscreen and opaque.</li>
   /// </ul>
   ///
-  static const int oMR1 = 27;
+  static const int v8_1 = 27;
 
   /// P.
   ///
@@ -546,14 +546,20 @@ abstract class AndroidVersionNames {
   /// even if there is no excess space.</li>
   /// </ul>
   ///
-  static const int p = 28;
+  static const int v9_0 = 28;
 
   /// Q.
-  static const int q = 29;
+  static const int v10_0 = 29;
 
   /// R.
-  static const int r = 30;
+  static const int v11_0 = 30;
 
   /// S.
-  static const int s = 31;
+  static const int v12_0 = 31;
+
+  /// S V2.
+  static const int v12_0L = 32;
+
+  /// T.
+  static const int v13_0 = 33;
 }
