@@ -17,13 +17,13 @@ class PlatformPlusPlugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "platform_plus")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "com.rodxander.platform_plus")
     channel.setMethodCallHandler(this)
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    if (call.method == "getAndroidSdkNumber") {
+      result.success(android.os.Build.VERSION.SDK_INT)
     } else {
       result.notImplemented()
     }

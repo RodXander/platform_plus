@@ -1,8 +1,20 @@
+import 'dart:io';
 
-import 'platform_plus_platform_interface.dart';
+import 'package:flutter/services.dart';
 
 class PlatformPlus {
-  Future<String?> getPlatformVersion() {
-    return PlatformPlusPlatform.instance.getPlatformVersion();
+  static const methodChannel = MethodChannel('com.rodxander.platform_plus');
+
+  PlatformPlus._();
+
+  static Future<PlatformPlus> getInstance() async {
+    if (Platform.isAndroid) {
+      _platformPlus.androidSdkNumber = await methodChannel.invokeMethod('getAndroidSdkNumber');
+    }
+    return _platformPlus;
   }
+
+  static final PlatformPlus _platformPlus = PlatformPlus._();
+
+  late int androidSdkNumber;
 }
