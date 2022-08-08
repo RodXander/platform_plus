@@ -1,7 +1,7 @@
 name: platform_plus
-description: A set of extensions and helper methods to access information about the underlying OS.
+description: A set of properties and helper methods to access information about the underlying OS.
 version: 0.0.1
-homepage:
+homepage: A set of properties and helper methods to access information about the underlying OS.
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
@@ -10,7 +10,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:
